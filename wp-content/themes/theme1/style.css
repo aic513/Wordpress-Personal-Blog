@@ -328,9 +328,10 @@ a.prev-next {
 }
 
 .footer-info ul li a {
-    line-height: 2;
+    line-height: 1;
     font-size: 13px;
     color: #373737;
+    padding: 7px 0;
 }
 
 .footer-info p a {
@@ -391,4 +392,8 @@ a.prev-next {
 
 .sidebar-widget li{
     margin-bottom: 10px;
+}
+
+.footer-info li{
+    float:none;
 }

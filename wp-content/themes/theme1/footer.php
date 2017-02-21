@@ -1,10 +1,20 @@
 <div class="footer-info-wrapper">
 	<div class="footer-info-main">
+		<?php if(!dynamic_sidebar('footer')): ?>
+			<div class="footer-info">
+				<h3>Виджет</h3>
+			</div>
+			<div class="footer-info">
+				<h3>Виджет</h3>
+			</div>
+			<div class="footer-info">
+				<h3>Виджет</h3>
+			</div>
+		<?php endif; ?>
+		<!--
 		<div class="footer-info">
 			<h3>about</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut purus odio, quis rutrum nibh. Etiam nec
-				tellus malesuada odio tincidunt fringilla quis vitae nisi. Lorem ipsum dolor sit amet, consectetur
-				adipiscing elit. Nullam fringilla malesuada convallis. Morbi laoreet volutpat rhoncus.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut purus odio, quis rutrum nibh. Etiam nec tellus malesuada odio tincidunt fringilla quis vitae nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla malesuada convallis. Morbi laoreet volutpat rhoncus.</p>
 		</div>
 		<div class="footer-info">
 			<h3>Browse</h3>
@@ -19,21 +29,19 @@
 		</div>
 		<div class="footer-info">
 			<h3>write for us</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut purus odio, quis rutrum nibh. Etiam nec
-				tellus malesuada odio tincidunt fringilla quis vitae nisi. Lorem ipsum dolor sit amet, consectetur
-				adipiscing elit. Nullam fringilla malesuada convallis. </p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut purus odio, quis rutrum nibh. Etiam nec tellus malesuada odio tincidunt fringilla quis vitae nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla malesuada convallis. </p>
 			<p><a href="#">Contact Us Now</a></p>
 		</div>
+		-->
 	</div>
 </div>
 <div class="footer-copy">
 	<p class="copy">Copyright © 2010 All Rights Reserved</p>
-	<p class="by-st">Designed by <a href="#">GraphicsFuel.com</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		Powered by <a href="#">Wordpress</a></p>
+	<p class="by-st">Designed by <a href="#">GraphicsFuel.com</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Powered by <a href="#">Wordpress</a></p>
 </div>
 <script>
-	$(document).ready(function () {
-		$('#slideshowHolder').jqFancyTransitions({navigation: true, width: 594, height: 279});
+	$(document).ready( function(){
+		$('#slideshowHolder').jqFancyTransitions({ navigation: true, width: 594, height: 279 });
 	});
 </script>
 <?php wp_footer(); ?>
