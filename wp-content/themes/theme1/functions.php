@@ -24,9 +24,17 @@ set_post_thumbnail_size(180,180);
 /*
  * добавляем виджеты
  */
-register_sidebar( array(
+register_sidebar( array(   //зарегистрировали виджет меню
 	'name'          => 'Меню',
 	'id'            => 'menu_header',
 	'before_widget' => '',   //чтобы не было точек от <li>
 	'after_widget'  => ''
 ) );
+
+register_sidebar(array(  //зарегистрировали виджет сайдбар
+	'name' => 'Sidebar',
+	'id' => 'sidebar',
+	'before_widget' => '<div class="sidebar-widget %2$s">',
+	'after_widget'  => '</div>',
+	'before_title'  => '<h3>',
+	'after_title'   => '</h3>'));

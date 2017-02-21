@@ -383,3 +383,12 @@ a.prev-next {
     background: #e6e6e6;
     color: #373737;
 }
+
+.widget_categories li{
+    float:left;
+    width: 50%;
+}
+
+.sidebar-widget li{
+    margin-bottom: 10px;
+}

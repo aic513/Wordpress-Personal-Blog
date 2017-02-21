@@ -3,7 +3,12 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-	<title><?php bloginfo('name'); ?></title>
+	<title>
+		<?php
+		bloginfo('name');
+		wp_title();
+		?>
+	</title>
 	<?php wp_head(); ?>
 </head>
 
