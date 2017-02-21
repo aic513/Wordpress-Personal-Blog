@@ -4,7 +4,7 @@
 		<div class="search-main">
 			<form action="" id="search-form" method="get">
 
-				<input class="search-txt" type="text" value="Поиск"
+				<input name="s" class="search-txt" type="text" value="Поиск"
 				       onBlur="if(this.value=='')this.value='Поиск'"
 				       onFocus="if(this.value=='Поиск')this.value=''"/>
 				<input type="image" src="<?php bloginfo('template_url'); ?>/images/search-btn.jpg"/>
