@@ -46,13 +46,7 @@
 				<?php endif; ?>
 
 				<div class="pager">
-					<a href="#">1</a>
-					<a href="#">2</a>
-					<a href="#">3</a>
-					<a href="#">4</a>
-					<span>of</span>
-					<a href="#">75</a>
-					<a href="#" class="prev-next">Next</a>
+					<?php posts_nav_link('<span> - </span>'); ?>
 				</div>
 
 			</div>
